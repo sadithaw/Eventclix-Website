@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+  :root{
+    --bg-color: #2b2b2b;
+    --text-color: rgb(255, 255, 255);
+    --main-color: #ff9100;
+  }
+
+  section{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 28, 28, 0.6)), url(https://assets.roar.media/Life/2017/09/Featured-Image-e1505121383658.jpg?w=1200);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  
+  }
+  
+  header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    background: transparent;
+    padding-top: 20px;
+    transition: all .50s ease;
+  }
+  .logo{
+    margin-left: 8%;
+  }
+
+  .logo span{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  .navbar{
+    display: flex;
+    padding-top: 10px;
+    margin-right: 10%;
+  }
+  .navbar a{
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0;
+    margin: 0px 20px;
+    transition: all .50s ease;
+  }
+  .navbar a:hover{
+    color: var(--main-color);
+  }
+  .navbar a.active{
+    color: var(--main-color);
+  }
+  .main{
+    display: flex;
+    align-items: center;
+  }
+  .main a{
+    margin-right: 50px;
+    margin-left: -10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .50s ease;
+  }
+  .user{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .sign{
+    background: #fff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+  
+  }
+  
+  .main a:hover{
+    color: var(--main-color);
+  }
+  
+  @media (max-width: 1280px){
+    header{
+      padding: 14px 2%;
+      transition: .2s;
+    }
+    .navbar a{
+      padding: 5px 0;
+      margin: 0px 20px;
+    }
+  }
+  
+  @media (max-width: 1090px){
+    #menu-icon{
+      display: block;
+    }
+    .navbar{
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 270px;
+      height: 29vh;
+      background: var(--main-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-radius: 10px;
+      transition: all .50s ease;
+    }
+    .navbar a{
+      display: block;
+      margin: 12px 0;
+      padding: 0px 25px;
+      transition: all .50s ease;
+    }
+    .navbar a:hover{
+      color: var(--text-color);
+      transform: translateY(5px);
+    }
+    .navbar a.active{
+      color: var(--text-color);
+    }
+    .navbar.open{
+      right: 2%;
+    }
+  }
+  
+  
+  .content{
+    text-align: center;
+    margin:15% 5% 10%;
+    }
+    
+  
+    .content .info h2{
+    color: #ffffff;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    }
+
+    .content .info p{
+      text-align: center;
+      color: white;
+      padding: 2% 20% 5% ;
+    }
+    
+    .content .info h2 span{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    }
+    
+    
+    .content .info-btn{
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+    transition-property: background;
+    }
+
+    .content .info-bt{
+      color: rgb(0, 0, 0);
+      background: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 3px;
+      padding: 15px 35px;
+      border-radius: 50px;
+      transition: 0.3s;
+      transition-property: background;
+      }
+
+    .content .info-btn:hover{
+    background: #ffffff;
+    }
+
+    .content-1{
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      width: 80%;
+      margin: 4rem auto 0 auto;
+    }
+    
+    .content-1 img{
+      height: 390px;
+      padding-left: 50px;
+      padding-top: 20px;
+    }
+    
+    .content-1 h1{
+      margin: 10px 10px 45px;
+      font-size: 40px;
+      letter-spacing: 4px;
+      text-align: center;
+    }
+    
+    .content-2 p{
+      margin-right: 15px;
+      line-height: 27px;
+      text-align: center;
+    }
+
+    .content-2{
+      display: flex;
+      justify-content: space-between;
+      padding: 150px 200px 200px ;
+      width: 100%;
+      margin: 6rem auto 0 auto;
+      background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(29, 28, 28, 0.2)),url(https://i.natgeofe.com/n/d6bd5cdc-528f-4887-9cc3-3fb4e10d6651/sri-lanka-travel.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+    
+    .content-2 h1{
+      margin: 10px 10px 45px;
+      padding-bottom: 50px;
+      font-size: 40px;
+      letter-spacing: 4px;
+      text-align: center;
+    }
+    
+    .content-2 p{
+      margin-right: 15px;
+      line-height: 30px;
+      text-align: justify;
+    }
+
+
+    .topic{
+      padding: 120px 200px 200px;
+      color: #fff;
+      opacity: 0.9;
+    }
+
+    .header h3{
+      text-align: center;
+      padding: 30px 30px 40px;
+      font-size: 40px;
+    }
+
+    .topic p{
+      text-align: justify;
+      line-height: 25px;
+    }
+
+    .header-1 h3{
+      text-align: center;
+      padding: 80px 30px 40px;
+      font-size: 40px;
+    }
+
+    .all-content{
+        background: linear-gradient(rgba(12, 12, 12, 0.6), rgba(0, 0, 0, 0.6)), url(https://static01.nyt.com/images/2019/02/03/travel/03frugal-srilanka01/merlin_148552275_74c0d250-949c-46e0-b8a1-e6d499e992cf-superJumbo.jpg);
+
+    }
+
+
+
+
+    footer{
+      background-color: rgb(0, 0, 0,0.7);
+      padding: 80px 0 20px;
+      color: white; 
+  }
+  
+  
+  .footer-container{
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-around;
+      padding-bottom: 50px;
+  }
+  
+  
+  .one-footer{
+    padding-top: 5px;
+  }
+  
+  .one-footer img
+  {   
+      width: 50px;
+  }
+  
+  .one-footer img:hover
+  {   
+      width: 60px;
+  }
+  
+  
+  .one-footer p
+  {   
+      text-align: justify;
+  }
+  
+  
+  .two-footer ul li{
+      list-style-type: none;
+      line-height: 30px;
+      color: black;
+  }
+  
+  .two-footer ul li a{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+  }
+  
+  .two-footer ul li a:hover{
+      color: var(--main-color);
+  }
+  
+  .three-footer ul li{
+      list-style-type: none;
+      line-height: 30px;
+  }
+  
+  
+  .three-footer ul li:hover{
+      color: var(--main-color);
+  }   
+  
+  
+  .icons{
+      padding-top: 100px;
+  }
+  
+  .icons a{
+      padding: 50px  5px 0;
+  }
+  
+  .copyright{
+      text-align: center;
+      font-size: 10px;
+      font-weight: bold;
+      padding-top: 20px ;
+  }
+  
+  .fa {      
+      color: black;
+      width: 42px;
+    }  
+  
+  .icons i{
+      font-size: 20px;
+      background-color: aliceblue;
+      padding: 10px 14px 10px;
+      border-radius: 50px;
+  }
+  
+  .icons i:hover{
+      box-shadow: 0px 4px 20px var(--main-color);
+  }

@@ -1,0 +1,594 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+    }
+  :root{
+    --bg-color: #2b2b2b;
+    --text-color: rgb(255, 255, 255);
+    --main-color: #ff9100;
+  }
+
+  body{
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(29, 28, 28, 0.7)), url(https://assets.roar.media/Life/2017/09/Featured-Image-e1505121383658.jpg?w=1200);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    background: transparent;
+    padding-top: 20px;
+    transition: all .50s ease;
+  }
+  .logo{
+    margin-left: 8%;
+  }
+
+  .logo span{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  .navbar{
+    display: flex;
+    padding-top: 10px;
+    margin-right: 10%;
+  }
+  .navbar a{
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0;
+    margin: 0px 20px;
+    transition: all .50s ease;
+  }
+  .navbar a:hover{
+    color: var(--main-color);
+  }
+  .navbar a.active{
+    color: var(--main-color);
+  }
+  .main{
+    display: flex;
+    align-items: center;
+  }
+  .main a{
+    margin-right: 50px;
+    margin-left: -10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .50s ease;
+  }
+  .user{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .sign{
+    background: #fff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+  
+  }
+  
+  .main a:hover{
+    color: var(--main-color);
+  }
+  
+  @media (max-width: 1280px){
+    header{
+      padding: 14px 2%;
+      transition: .2s;
+    }
+    .navbar a{
+      padding: 5px 0;
+      margin: 0px 20px;
+    }
+  }
+  
+  @media (max-width: 1090px){
+    #menu-icon{
+      display: block;
+    }
+    .navbar{
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 270px;
+      height: 29vh;
+      background: var(--main-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-radius: 10px;
+      transition: all .50s ease;
+    }
+    .navbar a{
+      display: block;
+      margin: 12px 0;
+      padding: 0px 25px;
+      transition: all .50s ease;
+    }
+    .navbar a:hover{
+      color: var(--text-color);
+      transform: translateY(5px);
+    }
+    .navbar a.active{
+      color: var(--text-color);
+    }
+    .navbar.open{
+      right: 2%;
+    }
+  }
+
+
+
+
+
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid rgb(255, 255, 255);
+  border-right: none;
+  padding: 15px;
+  height: 20px;
+  border-radius: 50px 0px 0px 50px;
+  outline: none;
+  color: #ffffff;
+}
+
+.searchTerm:focus{
+  color: #000000;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(253, 253, 253);
+  text-align: center;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 25%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+}
+
+.fa{
+  color:rgb(138, 129, 129);
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+.box-container{
+    padding: 200px 100px 100px;
+}
+
+.grid { 
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 80px;
+    border-radius: 50px;
+    }
+
+    .box-1{
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://static.independent.co.uk/2021/07/29/10/iStock-502301173.jpg?width=1200);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 25vh;
+        border-radius: 35px;  
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       
+    }   
+
+    .box-1 a{
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+    } 
+
+    .box-1:hover{
+        transform: scale(0.97);
+        transition: 0.5s;
+        
+    }   
+
+    .box-1 a:hover{
+      transform: scale(0.5);
+      transition: 5s;
+    }   
+
+
+
+
+
+    .box-2{
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://bestcarnivals.org/wp-content/uploads/2020/07/El-Kandy-Esala-Perahera-es-una-ceremonia-m%C3%A1s-importante-del-pa%C3%ADs.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 25vh;
+        border-radius: 35px;  
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       
+    }   
+
+    .box-2 a{
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+    } 
+
+    .box-2:hover{
+      transform: scale(0.97);
+      transition: 0.5s;
+    }   
+
+    .box-2 a:hover{
+      transform: scale(0.5);
+      transition: 5s;
+    }   
+
+
+
+    .box-3{
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://static.standard.co.uk/2022/10/06/17/newFile-1.jpg?width=1200&auto=webp&quality=75);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 25vh;
+        border-radius: 35px;  
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       
+    }   
+
+    .box-3 a{
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+    } 
+
+    .box-3:hover{
+      transform: scale(0.97);
+      transition: 0.5s;
+    }   
+
+    .box-3 a:hover{
+      transform: scale(0.5);
+      transition: 5s;
+    }   
+
+
+
+    .box-4{
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://www.matchingfoodandwine.com/files/blogattachments/top/indian-food@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 25vh;
+        border-radius: 35px;  
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       
+    }   
+
+    .box-4 a{
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+    } 
+
+    .box-4:hover{
+      transform: scale(0.97);
+      transition: 0.5s;
+    }   
+
+    .box-4 a:hover{
+      transform: scale(0.5);
+      transition: 5s;
+    }   
+
+
+
+    .box-5{
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://forestadventure.com.sg/wp-content/uploads/2018/07/kidsinner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 25vh;
+        border-radius: 35px;  
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       
+    }   
+
+    .box-5 a{
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+    } 
+
+    .box-5:hover{
+      transform: scale(0.97);
+      transition: 0.5s;
+    }   
+
+    .box-5 a:hover{
+      transform: scale(0.5);
+      transition: 5s;
+    }   
+
+
+
+    .box-6{
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://blog-c7ff.kxcdn.com/blog/wp-content/uploads/2019/09/Capture_HAckathon_wordpress.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 25vh;
+        border-radius: 35px;  
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       
+    }   
+
+    .box-6 a{
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+    } 
+
+    .box-6:hover{
+      transform: scale(0.97);
+      transition: 0.5s;
+    }   
+
+    .box-6 a:hover{
+      transform: scale(0.5);
+      transition: 5s;
+    }   
+
+
+
+    .box-7{
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://images.pexels.com/photos/209948/pexels-photo-209948.jpeg?cs=srgb&dl=pexels-pixabay-209948.jpg&fm=jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 25vh;
+        border-radius: 35px;  
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       
+    }   
+
+    .box-7 a{
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+    } 
+
+    .box-7:hover{
+      transform: scale(0.97);
+      transition: 0.5s;
+    }   
+
+    .box-7 a:hover{
+      transform: scale(0.5);
+      transition: 5s;
+    }   
+
+
+
+    .box-8{
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(http://s3.amazonaws.com/bizenglish/wp-content/uploads/2019/08/28175159/Fashion-Week-.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 25vh;
+        border-radius: 35px;  
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       
+    }   
+
+    .box-8 a{
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+    } 
+
+    .box-8:hover{
+      transform: scale(0.97);
+      transition: 0.5s;
+    }   
+
+    .box-8 a:hover{
+      transform: scale(0.5);
+      transition: 5s;
+    }   
+
+
+
+    .box-9{
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://media.timeout.com/images/105252906/image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 25vh;
+        border-radius: 35px;  
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       
+    }   
+
+    .box-9 a{
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+    } 
+
+    .box-9:hover{
+      transform: scale(0.97);
+      transition: 0.5s;
+    }   
+
+    .box-9 a:hover{
+      transform: scale(0.5);
+      transition: 5s;
+    }   
+
+
+
+
+
+    
+
+
+    
+    footer{
+      background-color: rgb(0, 0, 0,0.7);
+      padding: 80px 0 20px;
+      color: white; 
+  }
+  
+  
+  .footer-container{
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-around;
+      padding-bottom: 50px;
+  }
+  
+  
+  .one-footer{
+    padding-top: 5px;
+  }
+  
+  .one-footer img
+  {   
+      width: 50px;
+  }
+  
+  .one-footer img:hover
+  {   
+      width: 60px;
+  }
+  
+  
+  .one-footer p
+  {   
+      text-align: justify;
+  }
+  
+  
+  .two-footer ul li{
+      list-style-type: none;
+      line-height: 30px;
+      color: black;
+  }
+  
+  .two-footer ul li a{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+  }
+  
+  .two-footer ul li a:hover{
+      color: var(--main-color);
+  }
+  
+  .three-footer ul li{
+      list-style-type: none;
+      line-height: 30px;
+  }
+  
+  
+  .three-footer ul li:hover{
+      color: var(--main-color);
+  }   
+  
+  
+  .icons{
+      padding-top: 100px;
+  }
+  
+  .icons a{
+      padding: 50px  5px 0;
+  }
+  
+  .copyright{
+      text-align: center;
+      font-size: 10px;
+      font-weight: bold;
+      padding-top: 20px ;
+  }
+  
+  .fa {      
+      color: black;
+      width: 42px;
+    }  
+  
+  .icons i{
+      font-size: 20px;
+      background-color: aliceblue;
+      padding: 10px 14px 10px;
+      border-radius: 50px;
+  }
+  
+  .icons i:hover{
+      box-shadow: 0px 4px 20px var(--main-color);
+  }
