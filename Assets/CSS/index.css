@@ -302,17 +302,12 @@
   
   
   .one-footer{
-    padding-top: 5px;
+    padding-top: 1px;
   }
   
   .one-footer img
   {   
-      width: 50px;
-  }
-  
-  .one-footer img:hover
-  {   
-      width: 60px;
+      width: 70px;
   }
   
   
