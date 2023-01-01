@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Login Page with Background Image Example</title>
+  <title>Eventclix - Login</title>
   <link rel="stylesheet" href="../../Assets/CSS/sign-up.css">
 </head>
 <body>
