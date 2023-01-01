@@ -6,9 +6,9 @@
   <link rel="stylesheet" href="../../Assets/CSS/sign-up.css">
 </head>
 <body>
+    
 <!-- partial:index.partial.html -->
 <div id="bg"></div>
-
 <form action="../../controllers/Auth/login.php" method="POST">
 <div class="h1">
     <center><h1>Welcome to Events.lk</h1>
