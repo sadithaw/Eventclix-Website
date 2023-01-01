@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+  :root{
+    --bg-color: #2b2b2b;
+    --text-color: rgb(255, 255, 255);
+    --main-color: #ff9100;
+  }
+
+  section{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 28, 28, 0.6)), url(https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  
+  }
+  
+  header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    background: transparent;
+    padding-top: 20px;
+    transition: all .50s ease;
+  }
+  .logo{
+    margin-left: 8%;
+  }
+
+  .logo span{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  .navbar{
+    display: flex;
+    padding-top: 10px;
+    margin-right: 10%;
+  }
+  .navbar a{
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0;
+    margin: 0px 20px;
+    transition: all .50s ease;
+  }
+  .navbar a:hover{
+    color: var(--main-color);
+  }
+  .navbar a.active{
+    color: var(--main-color);
+  }
+  .main{
+    display: flex;
+    align-items: center;
+  }
+  .main a{
+    margin-right: 50px;
+    margin-left: -10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .50s ease;
+  }
+  .user{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .sign{
+    background: #fff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+  
+  }
+  
+  .main a:hover{
+    color: var(--main-color);
+  }
+  
+  @media (max-width: 1280px){
+    header{
+      padding: 14px 2%;
+      transition: .2s;
+    }
+    .navbar a{
+      padding: 5px 0;
+      margin: 0px 20px;
+    }
+  }
+  
+  @media (max-width: 1090px){
+    #menu-icon{
+      display: block;
+    }
+    .navbar{
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 270px;
+      height: 29vh;
+      background: var(--main-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-radius: 10px;
+      transition: all .50s ease;
+    }
+    .navbar a{
+      display: block;
+      margin: 12px 0;
+      padding: 0px 25px;
+      transition: all .50s ease;
+    }
+    .navbar a:hover{
+      color: var(--text-color);
+      transform: translateY(5px);
+    }
+    .navbar a.active{
+      color: var(--text-color);
+    }
+    .navbar.open{
+      right: 2%;
+    }
+  }
+  
+  
+  .content{
+    text-align: center;
+    margin:15% 5% 1.2%;
+    }
+    
+  
+    .content .info h2{
+    color: #ffffff;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 0px;
+    }
+
+    .content .info p{
+      text-align: center;
+      color: white;
+      padding: 2% 20% 5% ;
+    }
+
+    .content-1{
+      text-align: center;
+      background-color: #fefefe;
+      display: flexbox;
+      padding: 4%;
+      width: 60%;
+      margin: 4rem auto 0 auto;
+    }
+    
+    .content-1 h1{
+      margin: 1% 1% 1.4%;
+      font-size: 40px;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    .header-1 h3{
+      text-align: center;
+      padding: 80px 30px 40px;
+      font-size: 40px;
+    }
+    .button-18 {
+        margin-top: 2%;
+        align-items: center;
+        background-color: #ff9100;
+        border: 0;
+        border-radius: 100px;
+        box-sizing: border-box;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        justify-content: center;
+        line-height: 20px;
+        max-width: 600px;
+        min-height: 40px;
+        min-width: 0px;
+        overflow: hidden;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        touch-action: manipulation;
+        transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+      }
+      
+      .button-18:hover,
+      .button-18:focus { 
+        background-color: #FF6600;
+        color: #ffffff;
+      }
+      
+      .button-18:active {
+        background: #09223b;
+        color: rgb(255, 255, 255, .7);
+      }
+      
+      .button-18:disabled { 
+        cursor: not-allowed;
+        background: rgba(0, 0, 0, .08);
+        color: rgba(0, 0, 0, .3);
+      }
+
+      .btn-text{
+        color: #ffffff;
+      }
+
+    footer{
+      background-color: rgb(0, 0, 0,0.7);
+      padding: 80px 0 20px;
+      color: white; 
+  }
+  
+  
+  .footer-container{
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-around;
+      padding-bottom: 50px;
+  }
+  
+  .one-footer img
+  {   
+      width: 70px;
+  }
+  
+  
+  .one-footer p
+  {   
+      text-align: justify;
+  }
+  
+  
+  .two-footer ul li{
+      list-style-type: none;
+      line-height: 30px;
+      color: black;
+  }
+  
+  .two-footer ul li a{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+  }
+  
+  .two-footer ul li a:hover{
+      color: var(--main-color);
+  }
+  
+  .three-footer ul li{
+      list-style-type: none;
+      line-height: 30px;
+  }
+  
+  
+  .three-footer ul li:hover{
+      color: var(--main-color);
+  }   
+  
+  
+  .icons{
+      padding-top: 100px;
+  }
+  
+  .icons a{
+      padding: 50px  5px 0;
+  }
+  
+  .copyright{
+      text-align: center;
+      font-size: 10px;
+      font-weight: bold;
+      padding-top: 20px ;
+  }
+  
+  .fa {      
+      color: black;
+      width: 42px;
+    }  
+  
+  .icons i{
+      font-size: 20px;
+      background-color: aliceblue;
+      padding: 10px 14px 10px;
+      border-radius: 50px;
+  }
+  
+  .icons i:hover{
+      box-shadow: 0px 4px 20px var(--main-color);
+  }
