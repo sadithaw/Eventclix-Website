@@ -16,7 +16,7 @@
   }
 
   body{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(29, 28, 28, 0.7)), url(/Assets/img/ai-bg-images/ai-generated-4.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assets/img/ai-bg-images/ai-generated-4.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -140,13 +140,8 @@
     }
   }
 
-
-
-
-
-
-
 .search {
+  margin-bottom: 100px;
   width: 100%;
   position: relative;
   display: flex;
@@ -451,6 +446,7 @@
     }
 
   footer{
+      background-color: rgb(0, 0, 0,0.7);
       padding: 80px 0 20px;
       color: white; 
   }

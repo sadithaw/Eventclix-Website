@@ -13,7 +13,7 @@
   }
 
   body{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 28, 28, 0.6)), url(https://assets.roar.media/Life/2017/09/Featured-Image-e1505121383658.jpg?w=1200);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 28, 28, 0.6)), url(/Assets/img/events-link-images/event-register.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -203,19 +203,9 @@
     padding-bottom: 50px;
 }
 
-
-.one-footer{
-  padding-top: 5px;
-}
-
 .one-footer img
 {   
-    width: 50px;
-}
-
-.one-footer img:hover
-{   
-    width: 60px;
+    width: 70px;
 }
 
 

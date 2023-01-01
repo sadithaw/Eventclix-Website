@@ -188,8 +188,8 @@ header{
 }
 
 .container .box .dream img:hover{
-    transform: scale(0.9);
-    transition: 3s;
+    transform: scale(1.03);
+    transition: 0.7s;
 }
 
 @media only screen and (max-width: 769px){
@@ -214,13 +214,6 @@ header{
 }
 
 }
-
-
-
-
-
-
-
 footer{
   background-color: rgb(0, 0, 0,0.7);
   padding: 80px 0 20px;
@@ -236,19 +229,9 @@ footer{
   padding-bottom: 50px;
 }
 
-
-.one-footer{
-padding-top: 5px;
-}
-
 .one-footer img
 {   
-  width: 50px;
-}
-
-.one-footer img:hover
-{   
-  width: 60px;
+  width: 70px;
 }
 
 

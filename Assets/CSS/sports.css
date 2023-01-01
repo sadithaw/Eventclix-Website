@@ -13,7 +13,7 @@
   }
 
   body{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 28, 28, 0.6)), url(https://i.pinimg.com/originals/77/ab/93/77ab9340810956149133aa2872746dd5.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(29, 28, 28, 0.7)), url(/Assets/img/events-link-images/sports-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -168,7 +168,7 @@
     }
 
     .box-1{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/1949X455.jpg);
+      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(http://www.traditionalsports.org/images/sports/asia/angampora/angampora_Sri_Lanka.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -187,21 +187,17 @@
   } 
 
   .box-1:hover{
-    filter: drop-shadow(0px 10px 10px #000000);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 10px 30px #262626);
     transition: 0.5s;
-  }   
-
-  .box-1 a:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-  }   
+  }
 
 
 
 
 
   .box-2{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/Sangeera-event-banner-new-tickets-updated.jpg);
+      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://resources.pulse.icc-cricket.com/photo-resources/2022/02/20/c88d64aa-31d2-49f1-b737-423fea7c6b34/GettyImages-1371671172.jpg?width=1920&height=1080);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -221,18 +217,15 @@
 
   .box-2:hover{      
     filter: drop-shadow(0px 10px 10px #000000);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 10px 30px #262626);
     transition: 0.5s;
-  }   
-
-  .box-2 a:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-  }   
+  }
 
 
 
   .box-3{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/Aluth%20kalawak%20event%20banner.jpg);
+      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://cdn.newsfirst.lk/english-uploads/2021/12/44f0c8b4-volley1.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -251,19 +244,15 @@
   } 
 
   .box-3:hover{
-    filter: drop-shadow(0px 10px 10px #000000);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 10px 30px #262626);
     transition: 0.5s;
-  }   
-
-  .box-3 a:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-  }   
+  }
 
 
 
   .box-4{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/sen%20kada%20gala%20event.jpg);
+      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://resources.world.rugby/photo-resources/worldrugby/photo/2022/09/24/05604fce-7fd7-455d-af13-883c253c86c3/1243480719.jpg?width=1680);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -282,19 +271,15 @@
   } 
 
   .box-4:hover{
-    filter: drop-shadow(0px 10px 10px #000000);
-    transition: 0.5s;
-  }   
-
-  .box-4 a:hover{
     transform: scale(1.1);
+    filter: drop-shadow(0px 10px 30px #262626);
     transition: 0.5s;
-  }   
+  }
 
 
 
   .box-5{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/event%20new123.jpg);
+      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://netball.sport/wp-content/uploads/2016/11/England-v-Australia.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -313,19 +298,15 @@
   } 
 
   .box-5:hover{
-    filter: drop-shadow(0px 10px 10px #000000);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 10px 30px #262626);
     transition: 0.5s;
-  }   
-
-  .box-5 a:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-  }   
+  }
 
 
 
   .box-6{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/Live2love-event.jpg);
+      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://img.olympicchannel.com/images/image/private/f_auto/t_s_pog_staticContent_hero_xl/primary/kfsyzuaoipfhm4qonqci);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -344,18 +325,14 @@
   } 
 
   .box-6:hover{
-    filter: drop-shadow(0px 10px 10px #000000);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 10px 30px #262626);
     transition: 0.5s;
-  }   
-
-  .box-6 a:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-  }   
+  }
 
 
   .box-7{
-    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/Sakalpa-Event-Banner-1349x455.jpg);
+    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://www.thepapare.com/wp-content/uploads/220723075517-01-sydney-mclaughlin-world-record-741x486.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -374,19 +351,15 @@
 } 
 
 .box-7:hover{
-  filter: drop-shadow(0px 10px 10px #000000);
-  transition: 0,5s;
-}   
-
-.box-7 a:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
   transition: 0.5s;
-}   
+}
 
 
 
 .box-8{
-    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/Event-Banner-adare.jpg);
+    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://static.wixstatic.com/media/d7c7fa_8da7a97b91784a5c8e3f0df16ce2d774~mv2.jpg/v1/fill/w_1147,h_464,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/MDV-BHU%20-99.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -405,19 +378,14 @@
 } 
 
 .box-8:hover{
-  filter: drop-shadow(0px 10px 10px #000000);
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
   transition: 0.5s;
-}   
-
-.box-8 a:hover{
-  transform: scale(1.2);
-  transition: 0.5s;
-}   
-
+}
 
 
 .box-9{
-    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/LAST%20EVENT.jpg);
+    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://domf5oio6qrcr.cloudfront.net/medialibrary/9833/GettyImages-526245433.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -436,21 +404,16 @@
 } 
 
 .box-9:hover{
-  filter: drop-shadow(0px 10px 10px #000000);
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
   transition: 0.5s;
-}   
-
-.box-9 a:hover{
-  transform: scale(1.2);
-  transition: 0.5s;
-} 
+}
 
 
 
 
 
   footer{
-    background-color: rgb(0, 0, 0,0.7);
     padding: 80px 0 20px;
     color: white; 
 }
@@ -465,18 +428,9 @@
 }
 
 
-.one-footer{
-  padding-top: 5px;
-}
-
 .one-footer img
 {   
-    width: 50px;
-}
-
-.one-footer img:hover
-{   
-    width: 60px;
+    width: 70px;
 }
 
 
