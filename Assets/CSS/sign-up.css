@@ -22,7 +22,6 @@ body {
 form {
   width: 350px;
   position: relative;
-  z-index: 1000;
 }
 
 form .form-field {
