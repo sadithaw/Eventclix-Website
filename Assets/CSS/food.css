@@ -13,7 +13,7 @@
   }
 
   body{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 28, 28, 0.6)), url(https://assets.roar.media/Life/2017/09/Featured-Image-e1505121383658.jpg?w=1200);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 28, 28, 0.6)), url(/Assets/img/box-icon-image/food-icon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -168,7 +168,7 @@
     }
 
     .box-1{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/1949X455.jpg);
+      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://www.peckishme.com/wp-content/uploads/2017/03/milk-rice1-759x500.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -187,21 +187,17 @@
   } 
 
   .box-1:hover{
-    filter: drop-shadow(0px 10px 10px #000000);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 10px 30px #262626);
     transition: 0.5s;
-  }   
-
-  .box-1 a:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-  }   
+  }
 
 
 
 
 
   .box-2{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/Sangeera-event-banner-new-tickets-updated.jpg);
+      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://www.theflavorbender.com/wp-content/uploads/2020/05/Pol-Roti-Coconut-Roti-6768-699x1047.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -220,19 +216,14 @@
   } 
 
   .box-2:hover{      
-    filter: drop-shadow(0px 10px 10px #000000);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 10px 30px #262626);
     transition: 0.5s;
-  }   
-
-  .box-2 a:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-  }   
-
+  }
 
 
   .box-3{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/Aluth%20kalawak%20event%20banner.jpg);
+      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://www.lakpura.com/images/LK94007679-03-E.JPG);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -251,19 +242,15 @@
   } 
 
   .box-3:hover{
-    filter: drop-shadow(0px 10px 10px #000000);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 10px 30px #262626);
     transition: 0.5s;
-  }   
-
-  .box-3 a:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-  }   
+  }
 
 
 
   .box-4{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/sen%20kada%20gala%20event.jpg);
+      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://cookerybay.com/wp-content/uploads/2021/06/Chicken-Kottu.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -282,19 +269,15 @@
   } 
 
   .box-4:hover{
-    filter: drop-shadow(0px 10px 10px #000000);
-    transition: 0.5s;
-  }   
-
-  .box-4 a:hover{
     transform: scale(1.1);
+    filter: drop-shadow(0px 10px 30px #262626);
     transition: 0.5s;
-  }   
+  }
 
 
 
   .box-5{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/event%20new123.jpg);
+      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://cookerybay.com/wp-content/uploads/2022/03/Kokis-970x647.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -313,19 +296,15 @@
   } 
 
   .box-5:hover{
-    filter: drop-shadow(0px 10px 10px #000000);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 10px 30px #262626);
     transition: 0.5s;
-  }   
-
-  .box-5 a:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-  }   
+  }
 
 
 
   .box-6{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/Live2love-event.jpg);
+      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://i0.wp.com/www.lavenderandlovage.com/wp-content/uploads/2016/05/Sri-Lankan-Egg-Hoppers-for-Breakfast.jpg?resize=680%2C511&ssl=1);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -344,18 +323,14 @@
   } 
 
   .box-6:hover{
-    filter: drop-shadow(0px 10px 10px #000000);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 10px 30px #262626);
     transition: 0.5s;
-  }   
-
-  .box-6 a:hover{
-    transform: scale(1.2);
-    transition: 0.5s;
-  }   
+  }
 
 
   .box-7{
-    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/Sakalpa-Event-Banner-1349x455.jpg);
+    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://harischandramills.com/wp-content/uploads/2018/06/3-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -374,19 +349,15 @@
 } 
 
 .box-7:hover{
-  filter: drop-shadow(0px 10px 10px #000000);
-  transition: 0,5s;
-}   
-
-.box-7 a:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
   transition: 0.5s;
-}   
+}
 
 
 
 .box-8{
-    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/Event-Banner-adare.jpg);
+    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://www.lakpura.com/images/LK94007675-03-E.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -405,19 +376,15 @@
 } 
 
 .box-8:hover{
-  filter: drop-shadow(0px 10px 10px #000000);
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
   transition: 0.5s;
-}   
-
-.box-8 a:hover{
-  transform: scale(1.2);
-  transition: 0.5s;
-}   
+}
 
 
 
 .box-9{
-    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://mytickets.lk/contents/events/poster/LAST%20EVENT.jpg);
+    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://cheapandcheerfulcooking.com/wp-content/uploads/2020/01/coconut-sambal-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -436,20 +403,12 @@
 } 
 
 .box-9:hover{
-  filter: drop-shadow(0px 10px 10px #000000);
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
   transition: 0.5s;
-}   
-
-.box-9 a:hover{
-  transform: scale(1.2);
-  transition: 0.5s;
-} 
-
-
-
+}
 
   footer{
-    background-color: rgb(0, 0, 0,0.7);
     padding: 80px 0 20px;
     color: white; 
 }
@@ -463,21 +422,10 @@
     padding-bottom: 50px;
 }
 
-
-.one-footer{
-  padding-top: 5px;
-}
-
 .one-footer img
 {   
-    width: 50px;
+    width: 70px;
 }
-
-.one-footer img:hover
-{   
-    width: 60px;
-}
-
 
 .one-footer p
 {   

@@ -16,7 +16,7 @@
   }
 
   body{
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(29, 28, 28, 0.7)), url(https://assets.roar.media/Life/2017/09/Featured-Image-e1505121383658.jpg?w=1200);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(29, 28, 28, 0.7)), url(/Assets/img/ai-bg-images/ai-generated-4.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -231,22 +231,14 @@
     } 
 
     .box-1:hover{
-        transform: scale(0.97);
-        transition: 0.5s;
+      transform: scale(1.1);
+      filter: drop-shadow(0px 10px 30px #262626);
+      transition: 0.5s;
         
-    }   
-
-    .box-1 a:hover{
-      transform: scale(0.5);
-      transition: 5s;
-    }   
-
-
-
-
+    }  
 
     .box-2{
-        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://bestcarnivals.org/wp-content/uploads/2020/07/El-Kandy-Esala-Perahera-es-una-ceremonia-m%C3%A1s-importante-del-pa%C3%ADs.jpg);
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(/Assets/img/box-icon-image/blur-lights.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -265,19 +257,15 @@
     } 
 
     .box-2:hover{
-      transform: scale(0.97);
+      transform: scale(1.1);
+      filter: drop-shadow(0px 10px 30px #262626);
       transition: 0.5s;
-    }   
-
-    .box-2 a:hover{
-      transform: scale(0.5);
-      transition: 5s;
-    }   
+    }
 
 
 
     .box-3{
-        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://static.standard.co.uk/2022/10/06/17/newFile-1.jpg?width=1200&auto=webp&quality=75);
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(/Assets/img/box-icon-image/miusical-icon.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -296,14 +284,10 @@
     } 
 
     .box-3:hover{
-      transform: scale(0.97);
+      transform: scale(1.1);
+      filter: drop-shadow(0px 10px 30px #262626);
       transition: 0.5s;
-    }   
-
-    .box-3 a:hover{
-      transform: scale(0.5);
-      transition: 5s;
-    }   
+    }  
 
 
 
@@ -327,19 +311,15 @@
     } 
 
     .box-4:hover{
-      transform: scale(0.97);
+      transform: scale(1.1);
+      filter: drop-shadow(0px 10px 30px #262626);
       transition: 0.5s;
-    }   
-
-    .box-4 a:hover{
-      transform: scale(0.5);
-      transition: 5s;
-    }   
+    } 
 
 
 
     .box-5{
-        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://forestadventure.com.sg/wp-content/uploads/2018/07/kidsinner.jpg);
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(/Assets/img/box-icon-image/travel-icon.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -358,14 +338,10 @@
     } 
 
     .box-5:hover{
-      transform: scale(0.97);
+      transform: scale(1.1);
+      filter: drop-shadow(0px 10px 30px #262626);
       transition: 0.5s;
-    }   
-
-    .box-5 a:hover{
-      transform: scale(0.5);
-      transition: 5s;
-    }   
+    } 
 
 
 
@@ -389,14 +365,10 @@
     } 
 
     .box-6:hover{
-      transform: scale(0.97);
+      transform: scale(1.1);
+      filter: drop-shadow(0px 10px 30px #262626);
       transition: 0.5s;
-    }   
-
-    .box-6 a:hover{
-      transform: scale(0.5);
-      transition: 5s;
-    }   
+    }
 
 
 
@@ -420,19 +392,14 @@
     } 
 
     .box-7:hover{
-      transform: scale(0.97);
+      transform: scale(1.1);
+      filter: drop-shadow(0px 10px 30px #262626);
       transition: 0.5s;
-    }   
-
-    .box-7 a:hover{
-      transform: scale(0.5);
-      transition: 5s;
-    }   
-
+    }
 
 
     .box-8{
-        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(http://s3.amazonaws.com/bizenglish/wp-content/uploads/2019/08/28175159/Fashion-Week-.jpg);
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(/Assets/img/box-icon-image/fashion-icon.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -451,19 +418,15 @@
     } 
 
     .box-8:hover{
-      transform: scale(0.97);
+      transform: scale(1.1);
+      filter: drop-shadow(0px 10px 30px #262626);
       transition: 0.5s;
-    }   
-
-    .box-8 a:hover{
-      transform: scale(0.5);
-      transition: 5s;
     }   
 
 
 
     .box-9{
-        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://media.timeout.com/images/105252906/image.jpg);
+        background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(/Assets/img/box-icon-image/art-icon.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -482,25 +445,12 @@
     } 
 
     .box-9:hover{
-      transform: scale(0.97);
+      transform: scale(1.1);
+      filter: drop-shadow(0px 10px 30px #262626);
       transition: 0.5s;
-    }   
+    }
 
-    .box-9 a:hover{
-      transform: scale(0.5);
-      transition: 5s;
-    }   
-
-
-
-
-
-    
-
-
-    
-    footer{
-      background-color: rgb(0, 0, 0,0.7);
+  footer{
       padding: 80px 0 20px;
       color: white; 
   }
@@ -514,21 +464,10 @@
       padding-bottom: 50px;
   }
   
-  
-  .one-footer{
-    padding-top: 5px;
-  }
-  
   .one-footer img
   {   
-      width: 50px;
+      width: 70px;
   }
-  
-  .one-footer img:hover
-  {   
-      width: 60px;
-  }
-  
   
   .one-footer p
   {   
