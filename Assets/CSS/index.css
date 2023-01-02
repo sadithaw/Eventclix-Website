@@ -7,6 +7,7 @@
     list-style: none;
     scroll-behavior: smooth;
   }
+
   :root{
     --bg-color: #2b2b2b;
     --text-color: rgb(255, 255, 255);
@@ -21,13 +22,6 @@
     width: 100%;
     height: 100vh;
   }
-  
-  .info-bt .a {
-      text-decoration: none;
-      color: black;
-      margin-top: 100%;
-      padding-bottom: 25%;
-  }
 
   header{
     width: 100%;
@@ -38,9 +32,23 @@
     align-items: left;
     justify-content: space-between;
     background: transparent;
-    padding-top: 20px;
+    padding-top: 1.5%;
     transition: all .50s ease;
   }
+
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
+}
+
+  body::-webkit-scrollbar {
+    display: none;
+
+    align-content: center;
+}
+
+
   .logo{
     margin-left: 8%;
   }
@@ -57,9 +65,9 @@
   }
   .navbar a{
     color: var(--text-color);
-    font-size: 15px;
+    font-size: 100%;
     font-weight: 500;
-    padding: 10px 0;
+    padding: 1px 0;
     margin: 0px 20px;
     transition: all .50s ease;
   }
@@ -72,44 +80,6 @@
   .main{
     display: flex;
     align-items: center;
-  }
-  .main a{
-    margin-right: 50px;
-    margin-left: -10px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: all .50s ease;
-  }
-  .user{
-    display: flex;
-    align-items: center;
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
-  
-  .sign{
-    background: #fff;
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    border-radius: 10px;
-  
-  }
-  
-  .main a:hover{
-    color: var(--main-color);
-  }
-  
-  @media (max-width: 1280px){
-    header{
-      padding: 14px 2%;
-      transition: .2s;
-    }
-    .navbar a{
-      padding: 5px 0;
-      margin: 0px 20px;
-    }
   }
   
   @media (max-width: 1090px){
@@ -132,7 +102,7 @@
     .navbar a{
       display: block;
       margin: 12px 0;
-      padding: 0px 25px;
+      padding: 0px 250px;
       transition: all .50s ease;
     }
     .navbar a:hover{
@@ -146,7 +116,6 @@
       right: 2%;
     }
   }
-  
   
   .content{
     text-align: center;
@@ -170,7 +139,7 @@
       padding: 10% 20% 5% ;
     }
 
-    .content .info-bt{
+    .content .scroll-btn{
       color: rgb(0, 0, 0);
       background: #ffffff;
       text-decoration: none;
@@ -183,10 +152,9 @@
       transition-property: background;
       }
 
-    .content .info-bt:hover{
+    .content .scroll-btn:hover{
     background: var(--main-color);
     }
-
     .content-1{
       text-align: center;
       margin: 16% 15% 10%;
@@ -196,9 +164,9 @@
       background-color: #ffffff;
       display: flex;
       justify-content: space-between;
-      padding: 5%;
+      padding: 5.5%;
       width: 80%;
-      margin: 4rem auto 0 auto;
+      margin: 1rem auto 0 auto;
     }
     
     .content-1 p{
@@ -214,7 +182,7 @@
       }
 
     .content-1 h1{
-      margin: 10px 10px 45px;
+      margin: 10px 0px 45px;
       font-size: 42px;
       letter-spacing: 2px;
       text-align: center;
@@ -225,16 +193,15 @@
       display: flex;
       height: 100vh;
       width: 100%;
-      padding: 0% 20% 10% ;
-      background:url(../img/content/loginbg-image.png);
+      padding: 5% 20% 0% ;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(29, 28, 28, 0.7)), url(https://nerdnomads.com/wp-content/uploads/2014/04/DSC7145.jpg);
       background-size: cover;
-      background-position: center;
     }
     
     .content-2 h1{
-      color: #2b2b2b;
+      color: #ffffff;
       margin: 10px 10px 45px;
-      padding-bottom: 50px;
+      padding-bottom: 40px;
       font-size: 40px;
       letter-spacing: 4px;
       text-align: center;
@@ -260,9 +227,6 @@
       text-align: center;
       text-transform: capitalize;
     }
-    .inner-text{
-      padding: 10% 0% -10%;
-    }
 
 
     .topic{
@@ -278,8 +242,10 @@
     }
 
     .topic p{
-      text-align: justify;
+      text-align: center;
       line-height: 25px;
+      margin: 0% 15% 0%;
+      
     }
 
     .header-1 h3{
@@ -288,18 +254,17 @@
       font-size: 40px;
     }
 
-    .all-content{
-        background: linear-gradient(rgba(12, 12, 12, 0.6), rgba(0, 0, 0, 0.6)), url(https://static01.nyt.com/images/2019/02/03/travel/03frugal-srilanka01/merlin_148552275_74c0d250-949c-46e0-b8a1-e6d499e992cf-superJumbo.jpg);
-
+    .topic{
+      color: #2b2b2b;
     }
-
-
-
-
+    
     footer{
       background-color: rgb(0, 0, 0,0.7);
+      background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/wallpaper/kandyan-dancer.jpg);
       padding: 80px 0 20px;
       color: white; 
+      width: 100%;
+      height: 100%;
   }
   
   
