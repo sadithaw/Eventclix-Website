@@ -73,7 +73,7 @@
 
             if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
                 $.ajax({
-                   url: 'sendEmail.php',
+                   url: '../../controllers/Auth/sendEmail.php',
                    method: 'POST',
                    dataType: 'json',
                    data: {
