@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
   }
   :root{
     --bg-color: #2b2b2b;
@@ -20,6 +21,13 @@
     height: 100vh;  
   }
   
+  .info-bt .a {
+      text-decoration: none;
+      color: black;
+      margin-top: 100%;
+      padding-bottom: 25%;
+  }
+
   header{
     width: 100%;
     top: 0;
@@ -159,12 +167,6 @@
       text-align: center;
       color: white;
       padding: 2% 20% 5% ;
-    }
-    
-    .content .info h2 span{
-    color: #fff;
-    font-size: 50px;
-    font-weight: 600;
     }
     
     
