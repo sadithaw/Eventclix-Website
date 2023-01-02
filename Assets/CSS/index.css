@@ -11,7 +11,7 @@
   :root{
     --bg-color: #2b2b2b;
     --text-color: rgb(255, 255, 255);
-    --main-color: #ffc880;
+    --main-color: #ffb554;
   }
 
   section{
@@ -343,4 +343,8 @@
   
   .icons i:hover{
       box-shadow: 0px 4px 20px var(--main-color);
+  }
+
+  .three-footer a{
+    color: #ffffff;
   }
