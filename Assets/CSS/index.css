@@ -10,15 +10,16 @@
   :root{
     --bg-color: #2b2b2b;
     --text-color: rgb(255, 255, 255);
-    --main-color: #ff9100;
+    --main-color: #ffc880;
   }
 
   section{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 28, 28, 0.6)), url(https://assets.roar.media/Life/2017/09/Featured-Image-e1505121383658.jpg?w=1200);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(29, 28, 28, 0.7)), url(https://www.lanka-excursions-holidays.com/uploads/4/0/2/1/40216937/wood-carving-at-a-beam-in-the-drummers-hall-of-embekke_orig.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;  
+    width: 100%;
+    height: 100vh;
   }
   
   .info-bt .a {
@@ -149,7 +150,7 @@
   
   .content{
     text-align: center;
-    margin:15% 5% 10%;
+    margin: 16% 15% 10%;
     }
     
   
@@ -166,21 +167,7 @@
     .content .info p{
       text-align: center;
       color: white;
-      padding: 2% 20% 5% ;
-    }
-    
-    
-    .content .info-btn{
-    color: rgb(0, 0, 0);
-    background: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 3px;
-    padding: 15px 25px;
-    border-radius: 50px;
-    transition: 0.3s;
-    transition-property: background;
+      padding: 10% 20% 5% ;
     }
 
     .content .info-bt{
@@ -196,63 +183,85 @@
       transition-property: background;
       }
 
-    .content .info-btn:hover{
-    background: #ffffff;
+    .content .info-bt:hover{
+    background: var(--main-color);
     }
+
+    .content-1{
+      text-align: center;
+      margin: 16% 15% 10%;
+      }
 
     .content-1{
       background-color: #ffffff;
       display: flex;
       justify-content: space-between;
-      padding: 40px;
+      padding: 5%;
       width: 80%;
       margin: 4rem auto 0 auto;
     }
     
-    .content-1 img{
-      height: 390px;
-      padding-left: 50px;
-      padding-top: 20px;
-    }
-    
+    .content-1 p{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 36px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: capitalize;
+      }
+
     .content-1 h1{
       margin: 10px 10px 45px;
-      font-size: 40px;
-      letter-spacing: 4px;
+      font-size: 42px;
+      letter-spacing: 2px;
       text-align: center;
-    }
-    
-    .content-2 p{
-      margin-right: 15px;
-      line-height: 27px;
-      text-align: center;
+      color: #2b2b2b;
     }
 
     .content-2{
       display: flex;
-      justify-content: space-between;
-      padding: 150px 200px 200px ;
+      height: 100vh;
       width: 100%;
-      margin: 6rem auto 0 auto;
-      background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(29, 28, 28, 0.2)),url(https://i.natgeofe.com/n/d6bd5cdc-528f-4887-9cc3-3fb4e10d6651/sri-lanka-travel.jpg);
-      background-repeat: no-repeat;
+      padding: 0% 20% 10% ;
+      background:url(../img/content/loginbg-image.png);
       background-size: cover;
       background-position: center;
-      color: #fff;
     }
     
     .content-2 h1{
+      color: #2b2b2b;
       margin: 10px 10px 45px;
       padding-bottom: 50px;
       font-size: 40px;
       letter-spacing: 4px;
       text-align: center;
+
+            
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 72px;
+      text-align: center;
+      text-transform: capitalize;
     }
     
     .content-2 p{
-      margin-right: 15px;
-      line-height: 30px;
-      text-align: justify;
+      color: #ffffff;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .inner-text{
+      padding: 10% 0% -10%;
     }
 
 
