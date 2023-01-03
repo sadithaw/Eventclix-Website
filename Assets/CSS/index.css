@@ -191,10 +191,10 @@
 
     .content-2{
       display: flex;
-      height: 100vh;
+      height: 120vh;
       width: 100%;
       padding: 5% 20% 0% ;
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(29, 28, 28, 0.7)), url(https://nerdnomads.com/wp-content/uploads/2014/04/DSC7145.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(29, 28, 28, 0.7)), url(https://www.lanka-excursions-holidays.com/uploads/4/0/2/1/40216937/5984625_orig.jpg);
       background-size: cover;
     }
     
