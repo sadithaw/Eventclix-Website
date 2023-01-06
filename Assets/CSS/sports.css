@@ -1,514 +1,709 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    list-style: none;
-  }
-  :root{
-    --bg-color: #2b2b2b;
-    --text-color: rgb(255, 255, 255);
-    --main-color: #ffb554;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --bg-color: #2b2b2b;
+  --text-color: rgb(255, 255, 255);
+  --main-color: #ffb554;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assets/img/events-link-images/sports-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  background: transparent;
+  padding-top: 20px;
+  transition: all .50s ease;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+
+  align-content: center;
+}
+
+.logo {
+  margin-left: 8%;
+}
+
+.logo span {
+  color: var(--text-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  padding-top: 10px;
+  margin-right: 10%;
+}
+
+.navbar a{
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 1px 0;
+  margin: 0px 20px;
+  transition: all .50s ease;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+.navbar a.active {
+  color: var(--main-color);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.main a {
+  margin-right: 50px;
+  margin-left: -10px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all .50s ease;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.sign {
+  background: #fff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 10px;
+
+}
+
+.main a:hover {
+  color: var(--main-color);
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 14px 2%;
+    transition: .2s;
   }
 
-  body{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(29, 28, 28, 0.7)), url(/Assets/img/events-link-images/sports-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
+  .navbar a {
+    padding: 5px 0;
+    margin: 0px 20px;
   }
-  
-  header{
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
+}
+
+@media (max-width: 1090px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 270px;
+    height: 29vh;
+    background: var(--bg-color);
     display: flex;
-    align-items: left;
-    justify-content: space-between;
-    background: transparent;
-    padding-top: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
     transition: all .50s ease;
   }
-  
-  body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-y: scroll; 
-}
 
-  body::-webkit-scrollbar {
-    display: none;
-
-    align-content: center;
-}
-  .logo{
-    margin-left: 8%;
+  .navbar a {
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all .50s ease;
   }
 
-  .logo span{
+  .navbar a:hover {
     color: var(--text-color);
-    font-size: 1.7rem;
+    transform: translateY(5px);
+  }
+
+  .navbar a.active {
+    color: var(--text-color);
+  }
+
+  .navbar.open {
+    right: 2%;
+  }
+}
+
+
+.content {
+  padding: 60px 400px 50px 100px;
+}
+
+.info h2 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.info p {
+  color: #fff;
+  text-align: justify;
+  padding-top: 30px;
+}
+
+
+
+.box-container {
+  padding: 50px 70px 100px;
+  background-color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-gap: 80px;
+  border-radius: 50px;
+}
+
+.box-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://www.traditionalsports.org/images/sports/asia/angampora/angampora_Sri_Lanka.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.box-1 a {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+}
+
+.box-1:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
+  transition: 0.5s;
+}
+
+
+
+
+
+.box-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://resources.pulse.icc-cricket.com/photo-resources/2022/02/20/c88d64aa-31d2-49f1-b737-423fea7c6b34/GettyImages-1371671172.jpg?width=1920&height=1080);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.box-2 a {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+}
+
+.box-2:hover {
+  filter: drop-shadow(0px 10px 10px #000000);
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
+  transition: 0.5s;
+}
+
+
+
+.box-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.newsfirst.lk/english-uploads/2021/12/44f0c8b4-volley1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.box-3 a {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+}
+
+.box-3:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
+  transition: 0.5s;
+}
+
+
+
+.box-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://resources.world.rugby/photo-resources/worldrugby/photo/2022/09/24/05604fce-7fd7-455d-af13-883c253c86c3/1243480719.jpg?width=1680);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.box-4 a {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+}
+
+.box-4:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
+  transition: 0.5s;
+}
+
+
+
+.box-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://netball.sport/wp-content/uploads/2016/11/England-v-Australia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.box-5 a {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+}
+
+.box-5:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
+  transition: 0.5s;
+}
+
+
+
+.box-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.olympicchannel.com/images/image/private/f_auto/t_s_pog_staticContent_hero_xl/primary/kfsyzuaoipfhm4qonqci);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.box-6 a {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+}
+
+.box-6:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
+  transition: 0.5s;
+}
+
+
+.box-7 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.thepapare.com/wp-content/uploads/220723075517-01-sydney-mclaughlin-world-record-741x486.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.box-7 a {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+}
+
+.box-7:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
+  transition: 0.5s;
+}
+
+
+
+.box-8 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.wixstatic.com/media/d7c7fa_8da7a97b91784a5c8e3f0df16ce2d774~mv2.jpg/v1/fill/w_1147,h_464,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/MDV-BHU%20-99.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.box-8 a {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+}
+
+.box-8:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
+  transition: 0.5s;
+}
+
+
+.box-9 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://domf5oio6qrcr.cloudfront.net/medialibrary/9833/GettyImages-526245433.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.box-9 a {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+}
+
+.box-9:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 10px 30px #262626);
+  transition: 0.5s;
+}
+
+
+
+
+
+footer {
+  padding: 80px 0 20px;
+  color: white;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+
+.one-footer img {
+  width: 70px;
+}
+
+
+.one-footer p {
+  text-align: justify;
+}
+
+
+.two-footer ul li {
+  list-style-type: none;
+  line-height: 30px;
+  color: black;
+}
+
+.two-footer ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.two-footer ul li a:hover {
+  color: var(--main-color);
+}
+
+.three-footer ul li {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+
+.three-footer ul li:hover {
+  color: var(--main-color);
+}
+
+
+.icons {
+  padding-top: 100px;
+}
+
+.icons a {
+  padding: 50px 5px 0;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.fa {
+  color: black;
+  width: 42px;
+}
+
+.icons i {
+  font-size: 20px;
+  background-color: aliceblue;
+  padding: 10px 14px 10px;
+  border-radius: 50px;
+}
+
+.icons i:hover {
+  box-shadow: 0px 4px 20px var(--main-color);
+}
+
+.three-footer a {
+  color: #ffffff;
+}
+
+.menu-button {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 36px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-button {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 36px;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+
+  .grid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info h2 {
+    color: #fff;
+    font-size: 30px;
+    display: contents;
+    position: relative;
+  }
+  .content {
+    text-align: center;
+    padding: 40px 40px 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .logo {
+    margin-left: 5%;
+  }
+
+  .logo span {
+    color: var(--text-color);
+    font-size: 1rem;
     font-weight: 600;
   }
-  .navbar{
-    display: flex;
-    padding-top: 10px;
-    margin-right: 10%;
+
+  .navbar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-radius: 0px;
   }
-  .navbar a{
-    color: var(--text-color);
-    font-size: 15px;
-    font-weight: 500;
-    padding: 10px 0;
-    margin: 0px 20px;
-    transition: all .50s ease;
-  }
-  .navbar a:hover{
-    color: var(--main-color);
-  }
-  .navbar a.active{
-    color: var(--main-color);
-  }
-  .main{
-    display: flex;
-    align-items: center;
-  }
-  .main a{
-    margin-right: 50px;
-    margin-left: -10px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: all .50s ease;
-  }
-  .user{
-    display: flex;
-    align-items: center;
+
+  .navbar a {
+    display: block;
     color: #fff;
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
-  
-  .sign{
-    background: #fff;
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    border-radius: 10px;
-  
-  }
-  
-  .main a:hover{
-    color: var(--main-color);
-  }
-  
-  @media (max-width: 1280px){
-    header{
-      padding: 14px 2%;
-      transition: .2s;
-    }
-    .navbar a{
-      padding: 5px 0;
-      margin: 0px 20px;
-    }
-  }
-  
-  @media (max-width: 1090px){
-    #menu-icon{
-      display: block;
-    }
-    .navbar{
-      position: absolute;
-      top: 100%;
-      right: -100%;
-      width: 270px;
-      height: 29vh;
-      background: var(--main-color);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      border-radius: 10px;
-      transition: all .50s ease;
-    }
-    .navbar a{
-      display: block;
-      margin: 12px 0;
-      padding: 0px 25px;
-      transition: all .50s ease;
-    }
-    .navbar a:hover{
-      color: var(--text-color);
-      transform: translateY(5px);
-    }
-    .navbar a.active{
-      color: var(--text-color);
-    }
-    .navbar.open{
-      right: 2%;
-    }
-  }
-
-
-  .content{
-    padding: 60px 400px 50px 100px;
-  }
-
-  .info h2{
-        color: #fff;
-        font-size: 40px;
-  }
-
-  .info p{
-    color: #fff;
-    text-align: justify;
-    padding-top: 30px;
-  }
-
-
-
-  .box-container{
-    padding: 50px 70px 100px;
-    background-color: #fff;
-}
-
-.grid { 
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    grid-gap: 80px;
-    border-radius: 50px;
-    }
-
-    .box-1{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(http://www.traditionalsports.org/images/sports/asia/angampora/angampora_Sri_Lanka.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 25vh;
-      border-radius: 35px;  
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-     
-  }   
-
-  .box-1 a{
-      color: rgb(255, 255, 255);
-      font-size: 32px;
-  } 
-
-  .box-1:hover{
-    transform: scale(1.1);
-    filter: drop-shadow(0px 10px 30px #262626);
-    transition: 0.5s;
-  }
-
-
-
-
-
-  .box-2{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://resources.pulse.icc-cricket.com/photo-resources/2022/02/20/c88d64aa-31d2-49f1-b737-423fea7c6b34/GettyImages-1371671172.jpg?width=1920&height=1080);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 25vh;
-      border-radius: 25px;  
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-     
-  }   
-
-  .box-2 a{
-      color: rgb(255, 255, 255);
-      font-size: 32px;
-  } 
-
-  .box-2:hover{      
-    filter: drop-shadow(0px 10px 10px #000000);
-    transform: scale(1.1);
-    filter: drop-shadow(0px 10px 30px #262626);
-    transition: 0.5s;
-  }
-
-
-
-  .box-3{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://cdn.newsfirst.lk/english-uploads/2021/12/44f0c8b4-volley1.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 25vh;
-      border-radius: 25px;  
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-     
-  }   
-
-  .box-3 a{
-      color: rgb(255, 255, 255);
-      font-size: 32px;
-  } 
-
-  .box-3:hover{
-    transform: scale(1.1);
-    filter: drop-shadow(0px 10px 30px #262626);
-    transition: 0.5s;
-  }
-
-
-
-  .box-4{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://resources.world.rugby/photo-resources/worldrugby/photo/2022/09/24/05604fce-7fd7-455d-af13-883c253c86c3/1243480719.jpg?width=1680);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 25vh;
-      border-radius: 25px;  
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-     
-  }   
-
-  .box-4 a{
-      color: rgb(255, 255, 255);
-      font-size: 32px;
-  } 
-
-  .box-4:hover{
-    transform: scale(1.1);
-    filter: drop-shadow(0px 10px 30px #262626);
-    transition: 0.5s;
-  }
-
-
-
-  .box-5{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://netball.sport/wp-content/uploads/2016/11/England-v-Australia.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 25vh;
-      border-radius: 25px;  
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-     
-  }   
-
-  .box-5 a{
-      color: rgb(255, 255, 255);
-      font-size: 32px;
-  } 
-
-  .box-5:hover{
-    transform: scale(1.1);
-    filter: drop-shadow(0px 10px 30px #262626);
-    transition: 0.5s;
-  }
-
-
-
-  .box-6{
-      background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://img.olympicchannel.com/images/image/private/f_auto/t_s_pog_staticContent_hero_xl/primary/kfsyzuaoipfhm4qonqci);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 25vh;
-      border-radius: 25px;  
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-     
-  }   
-
-  .box-6 a{
-      color: rgb(255, 255, 255);
-      font-size: 32px;
-  } 
-
-  .box-6:hover{
-    transform: scale(1.1);
-    filter: drop-shadow(0px 10px 30px #262626);
-    transition: 0.5s;
-  }
-
-
-  .box-7{
-    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://www.thepapare.com/wp-content/uploads/220723075517-01-sydney-mclaughlin-world-record-741x486.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 25vh;
-    border-radius: 25px;  
-    display: flex;
-    justify-content: center;
     text-align: center;
-    align-items: center;
-   
-}   
-
-.box-7 a{
-    color: rgb(255, 255, 255);
-    font-size: 32px;
-} 
-
-.box-7:hover{
-  transform: scale(1.1);
-  filter: drop-shadow(0px 10px 30px #262626);
-  transition: 0.5s;
-}
-
-
-
-.box-8{
-    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://static.wixstatic.com/media/d7c7fa_8da7a97b91784a5c8e3f0df16ce2d774~mv2.jpg/v1/fill/w_1147,h_464,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/MDV-BHU%20-99.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 25vh;
-    border-radius: 25px;  
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-   
-}   
-
-.box-8 a{
-    color: rgb(255, 255, 255);
-    font-size: 32px;
-} 
-
-.box-8:hover{
-  transform: scale(1.1);
-  filter: drop-shadow(0px 10px 30px #262626);
-  transition: 0.5s;
-}
-
-
-.box-9{
-    background: linear-gradient(rgba(53, 51, 51, 0.2), rgba(29, 28, 28, 0.5)), url(https://domf5oio6qrcr.cloudfront.net/medialibrary/9833/GettyImages-526245433.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 25vh;
-    border-radius: 25px;  
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-   
-}   
-
-.box-9 a{
-    color: rgb(255, 255, 255);
-    font-size: 32px;
-} 
-
-.box-9:hover{
-  transform: scale(1.1);
-  filter: drop-shadow(0px 10px 30px #262626);
-  transition: 0.5s;
-}
-
-
-
-
-
-  footer{
-    padding: 80px 0 20px;
-    color: white; 
-}
-
-
-.footer-container{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 50px;
-}
-
-
-.one-footer img
-{   
-    width: 70px;
-}
-
-
-.one-footer p
-{   
-    text-align: justify;
-}
-
-
-.two-footer ul li{
-    list-style-type: none;
-    line-height: 30px;
-    color: black;
-}
-
-.two-footer ul li a{
-    color: rgb(255, 255, 255);
+    padding: 30px;
     text-decoration: none;
+  }
+
+  .menu-button {
+    display: flex;
+    color: #ffffff;
+    background: none;
+    border: none;
+    margin-left: 81%;
+    margin-top: -3.5%;
+  }
+
+  .close-button {
+    display: contents;
+    size: 60px;
+  }
+
+  .navbar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .navbar .close-btn:before,
+  .navbar .close-btn:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: var(--text-color);
+    width: 20px;
+    height: 2px;
+  }
+
+  .navbar .close-btn:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .navbar .close-btn:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
 }
 
-.two-footer ul li a:hover{
-    color: var(--main-color);
-}
+@media (max-width: 768px) {
 
-.three-footer ul li{
-    list-style-type: none;
-    line-height: 30px;
-}
+  footer {
+    padding: 80px 0 20px;
+    color: white;
+    background-size: cover;
+  }
 
+  .footer-container {
+    flex-flow: column wrap;
+    align-items: center;
+  }
 
-.three-footer ul li:hover{
-    color: var(--main-color);
-}   
+  .one-footer img {
+    margin-left: 39%;
+  }
 
-
-.icons{
-    padding-top: 100px;
-}
-
-.icons a{
-    padding: 50px  5px 0;
-}
-
-.copyright{
+  .one-footer p {
+    font-size: 14px;
     text-align: center;
-    font-size: 10px;
-    font-weight: bold;
-    padding-top: 20px ;
-}
+    margin: 0% 7% 0%;
+  }
 
-.fa {      
-    color: black;
-    width: 42px;
-  }  
+  .two-footer {
+    margin: 10% 0% 15%;
+  }
 
-.icons i{
+  .two-footer li {
+    margin: 5px 0px 0px;
+    text-align: center;
+  }
+
+  .fa {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icons i {
+    font-size: 16px;
+  }
+
+  .copyright {
+    font-size: 8px;
+  }
+
+  .three-footer li {
+    text-align: center;
+  }
+
+  .icons {
+    padding-top: 70px;
+  }
+
+  .icons i {
     font-size: 20px;
-    background-color: aliceblue;
-    padding: 10px 14px 10px;
-    border-radius: 50px;
-}
+    background-color: rgb(255, 255, 255);
+    padding: 10px 12px 0px;
+    border-radius: 50%;
+  }
 
-.icons i:hover{
-    box-shadow: 0px 4px 20px var(--main-color);
-}
-
-.three-footer a{
-  color: #ffffff;
 }

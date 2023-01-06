@@ -5,6 +5,8 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
   }
   :root{
     --bg-color: #2b2b2b;
@@ -17,7 +19,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;  
+    height: 100vh;
+    background-attachment: fixed;
   }
   
   header{
@@ -62,7 +65,7 @@
     color: var(--text-color);
     font-size: 15px;
     font-weight: 500;
-    padding: 10px 0;
+    padding: 1px 0;
     margin: 0px 20px;
     transition: all .50s ease;
   }
@@ -125,7 +128,7 @@
       right: -100%;
       width: 270px;
       height: 29vh;
-      background: var(--main-color);
+      background: var(--bg-color);
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -170,7 +173,7 @@
     .content .info p{
       text-align: center;
       color: white;
-      padding: 2% 20% 5%;
+      padding: 1rem 3.3rem 3rem;
       line-height: 160%;
     }
 
@@ -210,9 +213,7 @@
         font-weight: 600;
         justify-content: center;
         line-height: 20px;
-        max-width: 600px;
         min-height: 40px;
-        min-width: 0px;
         overflow: hidden;
         padding: 10px;
         padding-left: 20px;
@@ -247,8 +248,9 @@
       }
 
     footer{
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(29, 28, 28, 0.7)), url(https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg);
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg);
       background-color: rgb(0, 0, 0,0.7);
+      background-size: cover;
       padding: 80px 0 20px;
       color: white;
   }
@@ -333,4 +335,256 @@
 
   .three-footer a{
     color: #ffffff;
+  }
+
+  
+.menu-button {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 36px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-button {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 36px;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+
+  section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512__340.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    text-align: center;
+    margin: 15% 5% 10%;
+  }
+
+
+  .content .info h2 {
+    color: #ffffff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 32px;
+  }
+  
+  .content .info p{
+    font-size: 16px;
+    padding: 2rem 1rem 4rem;
+  }
+
+  .content-1 {
+    text-align: center;
+    background-color: #fefefe;
+    display: flexbox;
+    padding: 4%;
+    width: 60%;
+    margin: 4rem auto 3rem;
+}
+
+  .content-1 h1 {
+    margin: 0rem -2rem 3rem;
+    font-size: 30px;
+    text-align: center;
+    color: #2b2b2b;
+    letter-spacing: normal;
+  }
+
+  .content-1 p {
+    margin: 1rem -3rem 3rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+
+  .content-2 h1 {
+    color: #ffffff;
+    padding: 8% 8% 3%;
+    margin: auto auto 45px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .content-2 p {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    line-height: 200%;
+    margin: 2rem 3rem 5rem;
+  }
+
+  .topic {
+    padding: 2em 3em 5em;
+    color: #2b2b2b;
+    opacity: 0.9;
+  }
+
+  .header h3 {
+    text-align: center;
+    padding: 30px 30px 40px;
+    font-size: 30px;
+  }
+
+  .topic p {
+    text-align: center;
+    line-height: 200%;
+    font-size: 16px;
+
+  }
+
+  .header-1 h3 {
+    text-align: center;
+    padding: 80px 30px 40px;
+    font-size: 30px;
+  }
+}
+
+  @media (max-width: 768px) {
+
+    .logo {
+      margin-left: 5%;
+    }
+  
+    .logo span {
+      color: var(--text-color);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  
+    .navbar {
+      width: 250px;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      overflow-x: hidden;
+      transition: 0.5s;
+      border-radius: 0px;
+    }
+  
+    .navbar a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      text-decoration: none;
+    }
+  
+    .menu-button {
+      display: flex;
+      color: #ffffff;
+      background: none;
+      border: none;
+      margin-left: 81%;
+      margin-top: -3.5%;
+    }
+  
+    .close-button {
+      display: contents;
+      size: 60px;
+    }
+  
+    .navbar .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+  
+    .navbar .close-btn:before,
+    .navbar .close-btn:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: var(--text-color);
+      width: 20px;
+      height: 2px;
+    }
+  
+    .navbar .close-btn:before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  
+    .navbar .close-btn:after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  
+  }
+
+  @media (max-width: 768px) {
+    footer {
+      padding: 80px 0 20px;
+      color: white;
+      background-size: cover;
+    }
+  
+    .footer-container {
+      flex-flow: column wrap;
+      align-items: center;
+    }
+    .one-footer img {
+      margin-left: 39%;
+    }
+    .one-footer p {
+      font-size: 14px;
+      text-align: center;
+    }
+    .two-footer {
+      margin: 5% 0% 15%;
+    }
+    .two-footer li{
+      margin: 5px 0px 0px;
+      text-align: center;
+    }
+    .fa {
+      width: 40px;
+      height: 40px;
+    }
+    .icons i {
+      font-size: 16px;
+    }
+    .copyright {
+      font-size: 8px;
+    }
+    .three-footer li{
+      text-align: center;
+    }
+  
   }

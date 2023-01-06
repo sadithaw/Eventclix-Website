@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -16,13 +15,14 @@
   --main-color: #ffb554;
 }
 
-
-body {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(29, 28, 28, 0.6)), url(https://images.pexels.com/photos/5273637/pexels-photo-5273637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://www.lanka-excursions-holidays.com/uploads/4/0/2/1/40216937/wood-carving-at-a-beam-in-the-drummers-hall-of-embekke_orig.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
 }
 
 header {
@@ -50,6 +50,7 @@ body::-webkit-scrollbar {
   align-content: center;
 }
 
+
 .logo {
   margin-left: 8%;
 }
@@ -66,7 +67,7 @@ body::-webkit-scrollbar {
   margin-right: 10%;
 }
 
-.navbar a{
+.navbar a {
   color: var(--text-color);
   font-size: 15px;
   font-weight: 500;
@@ -83,40 +84,6 @@ body::-webkit-scrollbar {
   color: var(--main-color);
 }
 
-.main {
-  display: flex;
-  align-items: center;
-}
-
-.main a {
-  margin-right: 50px;
-  margin-left: -10px;
-  font-size: 16px;
-  font-weight: 500;
-  transition: all .50s ease;
-}
-
-.user {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  border: 2px solid #fff;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-.sign {
-  background: #fff;
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
-  border-radius: 10px;
-
-}
-
-.main a:hover {
-  color: var(--main-color);
-}
-
 @media (max-width: 1280px) {
   header {
     padding: 14px 2%;
@@ -130,9 +97,6 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 1090px) {
-  #menu-icon {
-    display: block;
-  }
 
   .navbar {
     position: absolute;
@@ -148,10 +112,11 @@ body::-webkit-scrollbar {
     transition: all .50s ease;
   }
 
+
   .navbar a {
     display: block;
     margin: 12px 0;
-    padding: 0px 25px;
+    padding: 0px 250px;
     transition: all .50s ease;
   }
 
@@ -169,75 +134,140 @@ body::-webkit-scrollbar {
   }
 }
 
+.content {
+  text-align: center;
+  margin: 10% 20% 10%;
+}
 
 
+.content .info h2 {
+  color: #ffffff;
+  font-size: 62px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
 
+.content .scroll-btn {
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  padding: 15px 35px;
+  border-radius: 50px;
+  transition: 0.8s;
+  transition-property: background;
+}
 
+.content .scroll-btn:hover {
+  background: var(--main-color);
+}
 
-.container {
+.content-1 {
+  background-color: #ffffff;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  padding: 4.5%;
+  width: 80%;
+  margin: auto auto 8rem;
+  text-align: center;
+}
+
+.content-1 h1 {
+  margin: 0px 0px 3%;
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #2b2b2b;
+}
+
+.content-1 p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+  display: flex;
   align-items: center;
   text-align: center;
-  margin: 100px 100px 150px 100px;
+  text-transform: capitalize;
 }
 
-.container .heading {
-  width: 50%;
-  padding-bottom: 50px;
-}
-
-.container .heading h3 {
-  font-size: 3em;
-  font-weight: bolder;
-  padding-bottom: 10px;
-  color: #ffffff;
-}
-
-.container .heading h3 span {
-  font-weight: 100;
-}
-
-.container .box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.container .box .dream {
-  display: flex;
-  flex-direction: column;
-  width: 32.5%;
-}
-
-.container .box .dream img {
+.content-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://www.lanka-excursions-holidays.com/uploads/4/0/2/1/40216937/5984625_orig.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   width: 100%;
-  padding-bottom: 15px;
-  border-radius: 5px;
+  min-height: 90vh;
+  max-height: 300vh;
 }
 
-.container .box .dream img:hover {
-  transform: scale(1.03);
-  transition: 0.7s;
+.content-2 h1 {
+  color: #ffffff;
+  padding: 8% 8% 2%;
+  margin: auto auto 45px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+  text-transform: capitalize;
 }
 
-@media only screen and (max-width: 769px) {
-  .container .box {
-    flex-direction: column;
-  }
+.content-2 p {
+  color: #ffffff;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  line-height: 200%;
+  margin: -2rem 12rem 0rem;
+}
 
-  .container .box .dream {
-    width: 100%;
-  }
+.topic {
+  padding: 7em 14em 7em;
+  color: #2b2b2b;
+  opacity: 0.9;
+}
 
+.header h3 {
+  text-align: center;
+  padding: 30px 30px 40px;
+  font-size: 48px;
+}
 
+.topic p {
+  text-align: center;
+  line-height: 200%;
+  font-size: 18px;
+
+}
+
+.header-1 h3 {
+  text-align: center;
+  padding: 80px 30px 40px;
+  font-size: 48px;
 }
 
 footer {
-  background-color: rgb(0, 0, 0, 0.7);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://upload.wikimedia.org/wikipedia/commons/4/4d/Sandakada_pahana_Ridi_Viharaya.JPG);
   padding: 80px 0 20px;
+  background-size: cover;
+  background-attachment: fixed;
   color: white;
+  width: 100%;
+  max-height: 200%;
 }
 
 
@@ -320,6 +350,7 @@ footer {
   color: #ffffff;
 }
 
+
 .menu-button {
   display: none;
   position: absolute;
@@ -342,37 +373,123 @@ footer {
 
 @media (max-width: 768px) {
 
-  .grid{
-    display: flex;
-    flex-direction: column;
+  section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://www.lanka-excursions-holidays.com/uploads/4/0/2/1/40216937/wood-carving-at-a-beam-in-the-drummers-hall-of-embekke_orig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 95vh;
   }
 
-  .info h2 {
-    color: #fff;
-    font-size: 30px;
-    display: contents;
-    position: relative;
-  }
   .content {
     text-align: center;
-    padding: 40px 40px 40px;
+    margin: 26% 5% 10%;
   }
-  .container {
+
+
+  .content .info h2 {
+    color: #ffffff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 32px;
+  }
+
+  .content .scroll-btn {
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 3px;
+    padding: 12px 14px;
+    border-radius: 50px;
+    transition: 0.8s;
+    transition-property: background;
+  }
+
+  .content-1 {
+    background-color: #ffffff;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    padding: 4.5%;
+    width: 80%;
+    margin: auto auto 8rem;
+    text-align: center;
+  }
+
+  .content-1 h1 {
+    margin: 0px 0px 10%;
+    font-size: 30px;
+    text-align: center;
+    color: #2b2b2b;
+    letter-spacing: normal;
+  }
+
+  .content-1 p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 36px;
+    display: flex;
     align-items: center;
     text-align: center;
-    margin: 45px 35px 35px;
-    }
-    .container .heading h3 {
-      font-size: 2em;
-      font-weight: bolder;
-      padding-bottom: 10px;
-      color: #ffffff;
+    text-transform: capitalize;
+  }
+
+  .content-2 h1 {
+    color: #ffffff;
+    padding: 8% 8% 3%;
+    margin: auto auto 45px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .content-2 p {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    line-height: 200%;
+    margin: 2rem 3rem 5rem;
+  }
+
+  .topic {
+    padding: 2em 3em 5em;
+    color: #2b2b2b;
+    opacity: 0.9;
+  }
+
+  .header h3 {
+    text-align: center;
+    padding: 30px 30px 40px;
+    font-size: 30px;
+  }
+
+  .topic p {
+    text-align: center;
+    line-height: 200%;
+    font-size: 16px;
+
+  }
+
+  .header-1 h3 {
+    text-align: center;
+    padding: 80px 30px 40px;
+    font-size: 30px;
   }
 }
-
 
 @media (max-width: 768px) {
 
