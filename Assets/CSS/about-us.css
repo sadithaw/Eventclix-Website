@@ -6,7 +6,6 @@
     text-decoration: none;
     list-style: none;
     -webkit-tap-highlight-color: transparent;
-    -webkit-appearance: none;
   }
   :root{
     --bg-color: #2b2b2b;

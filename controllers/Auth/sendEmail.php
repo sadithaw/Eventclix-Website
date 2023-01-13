@@ -7,9 +7,9 @@
         $subject = $_POST['subject'];
         $body = $_POST['body'];
 
-        require "PHPMailer/PHPMailer.php";
-        require "PHPMailer/SMTP.php";
-        require "PHPMailer/Exception.php";
+        require "../PHPMailer/PHPMailer.php";
+        require "../PHPMailer/SMTP.php";
+        require "../PHPMailer/Exception.php";
 
         $mail = new PHPMailer();
 
@@ -17,15 +17,15 @@
         $mail->isSMTP();
         $mail->Host = "smtp.gmail.com";
         $mail->SMTPAuth = true;
-        $mail->Username = 'eventclix.online@gmail.com'; //enter you email address
-        $mail->Password = 'fnvwddkxqxrrqlby'; //enter you email password
+        $mail->Username = 'info@eventclix.online'; //enter you email address
+        $mail->Password = 'eventclix2022'; //enter you email password
         $mail->Port = 465;
         $mail->SMTPSecure = "ssl";
 
         //Email Settings
         $mail->isHTML(true);
         $mail->setFrom($email, $name);
-        $mail->addAddress("eventclix.online@gmail.com"); //enter you email address
+        $mail->addAddress("info@eventclix.online"); //enter you email address
         $mail->Subject = ("$email ($subject)");
         $mail->Body = $body;
 

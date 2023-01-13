@@ -76,7 +76,7 @@
 
             if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
                 $.ajax({
-                    url: '../../controllers/Auth/sendEmail.php',
+                    url: '../../Controllers/Connection/connection.php',
                     method: 'POST',
                     dataType: 'json',
                     data: {
@@ -85,7 +85,7 @@
                         subject: subject.val(),
                         body: body.val()
                     },
-                    success: function (response) {
+                    success: function(response) {
                         $('#myForm')[0].reset();
                         $('.sent-notification').text("HEY! We got Your Message.");
                     }
@@ -95,10 +95,10 @@
 
         function isNotEmpty(caller) {
             if (caller.val() == "") {
-                caller.css('border', '3px solid red');
+                caller.css('border', '10px solid red');
                 return false;
             } else
-                caller.css('border', '3px solid green');
+                caller.css('border', '10px solid green');
 
             return true;
         }
@@ -132,11 +132,11 @@
 
             <div class="three-footer">
                 <ul>
-                    <li>Contact Us</li>
-                    <li>EVENTCLiX@gmail.com</li>
-                    <li>EVENTCLiX@yahoo.com</li>
-                    <li>WWW.EVENTCLiX.com</li>
-                    <li>+94 760 832 563</li>
+                    <li><a href="index.php">Contact Us</a></li>
+                    <li><a href="mailto:info@eventclix.online">info@eventclix.online</a></li>
+                    <li><a href="../../index.html">www.eventclix.online</a></li>
+                    <li><a href="tel:+94 1912">TOURISM HOTLINE : 1912</a></li>
+                    <li><a href="tel:+94 11 242 1052">TOURISM POLICE +94 11 242 1052</a></li>
                 </ul>
             </div>
 
