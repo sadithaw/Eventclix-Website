@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
     -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 :root {

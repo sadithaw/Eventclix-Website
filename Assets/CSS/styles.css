@@ -7,6 +7,7 @@
   list-style: none;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
 :root {
@@ -42,6 +43,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: scroll;
+
 }
 
 body::-webkit-scrollbar {

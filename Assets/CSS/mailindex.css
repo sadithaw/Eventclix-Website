@@ -5,6 +5,7 @@
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   list-style: none;
+  user-select: none;
 }
 
 :root {
