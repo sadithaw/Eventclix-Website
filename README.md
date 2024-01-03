@@ -1,10 +1,4 @@
 # Eventclix-Website
-Year 1 Semester 2 Final Sem Project
-
-National School of Business Management
-
-Year 01 Semester 02 Semester Final Project
-
 Website Name: Eventclix
 
 Website Domain: Eventclix.online
@@ -26,3 +20,5 @@ Eventclix is a website that allows tourists to search for and book events and ac
 Conclusion:
 
 Eventclix is a valuable resource for tourists visiting a new city or area, providing a comprehensive and user-friendly platform for discovering and booking events and activities. The website has the potential to generate significant revenue through booking fees and commissions, and has a strong marketing and sales strategy in place to drive traffic and bookings.
+
+#Year 1 sem 1
