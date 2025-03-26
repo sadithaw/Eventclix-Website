@@ -2,7 +2,7 @@
 
 <p><strong>Domain:</strong> <a href="https://eventclix.online" target="_blank">eventclix.online</a><br>
 <strong>Target Audience:</strong> Tourists & Locals<br>
-<strong>Semester:</strong> Year 1 | Semester 1</p>
+<strong>Semester:</strong> Year 1 | Semester 2</p>
 
 <hr>
 
